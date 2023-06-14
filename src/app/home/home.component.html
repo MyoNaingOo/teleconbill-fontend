@@ -1,0 +1,31 @@
+
+<div class="container-fluid d-flex justify-content-center">
+
+  <div class="col-10 p-5 mt-5 card">
+
+    <form #f="ngForm" (ngSubmit)="send(f)">
+
+      <label for="sendnumber">Your number</label>
+      <input type="tel" name="sendnumber" id="sendnumber" class="form-control mb-5" #sendnumber="ngModel" ngModel >
+
+      <label for="recenumber">Send Number</label>
+      <input type="tel" name="recenumber" id="recenumber" class="form-control mb-5" #recenumber="ngModel" ngModel >
+      <button class="btn btn-danger float-end ">Send</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+
+<table class="table table-light table-striped col-10   " >
+
+  <thead>
+    <tr>
+      <th scope="col">Ser No</th>
+      <th scope="col">Sended Number</th>
+      <th scope="col">User Number</th>
+      <th scope="col">user Name</th>
+    </tr>
+  </thead>
+
+  <tbody *ngFor="let bill of billtable" >
+
+    <tr>
+      <th scope="row">{{ bill.id }}</th>
+      <td>09- {{ bill.recenumber }}</td>
+      <td>09- {{ bill.sendnumber }}</td>
+      <td>{{ bill.user.name }}</td>
+    </tr>
+
+  </tbody>
+
+
+
+
+</table>
